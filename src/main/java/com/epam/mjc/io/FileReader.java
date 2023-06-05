@@ -11,7 +11,7 @@ public class FileReader {
     private long phone;
     public Profile getDataFromFile(File file) {
 
-        try(BufferedReader br = new BufferedReader(new java.io.FileReader(file))){;
+        try(BufferedReader br = new BufferedReader(new java.io.FileReader(file))){
             String line;
             while ((line = br.readLine()) != null) {
                 String[] keyValue = line.split(":");
