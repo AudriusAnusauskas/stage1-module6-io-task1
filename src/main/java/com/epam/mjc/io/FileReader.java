@@ -33,6 +33,8 @@ public class FileReader {
                         case "Phone":
                             phone = Long.parseLong(value);
                             break;
+                        default:
+                            break;
                     }
                 }
             }
@@ -56,12 +58,5 @@ public class FileReader {
     public long getPhone() {
         return phone;
     }
-
-
-
-
     }
-//    public static void main(String[] args) {
-//       FileReader fr = new FileReader();
-//       fr.getDataFromFile(new File("C:\\Users\\aaaud_3unkhoj\\Documents\\Audrius\\Epam\\mjc-school\\stage1-module6-io-task1\\src\\main\\resources\\Profile.txt"));
-//    }
+
